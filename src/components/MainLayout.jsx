@@ -3,7 +3,7 @@ import LeftSideBar from "./LeftSideBar";
 
 export default function MianLayout() {
   return (
-    <div className="flex">
+    <div >
       <LeftSideBar/>
       <Outlet/>
     </div>

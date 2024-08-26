@@ -32,7 +32,6 @@ export default function LeftSideBar() {
     },
     { icon: <LogOut />, text: "Logout" },
   ];
- 
   const handleLogout=async()=>{
     try {
       const res=await axios.get("http://localhost:3000/api/v1/user/logout",{
@@ -50,8 +49,6 @@ export default function LeftSideBar() {
   }
   const sidebarHandler=(text)=>{
     if(text==="Logout") handleLogout();
-    
-
   }
   return (
     <div className="fixed top-0 z-10 left-0 px-4 border-r border-gray-300 w-[13%] h-screen">
